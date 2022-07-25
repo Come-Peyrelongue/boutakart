@@ -1,0 +1,56 @@
+@font-face {
+  font-family: bangers;
+  src: url("bangers.regular.ttf");
+  font-weight: bold;
+}
+
+html, body {
+	font-family: bangers;
+	margin: 0;
+    height: 100%;
+    width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fefee1;
+}
+
+h1 {
+	font-size: 6em
+}
+
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5em;
+	background-color: blue;
+	text-decoration: none;
+	width: 200px;
+	height: 50px;
+	border-radius: 20px;
+	margin-left: 8%;
+}
+
+.button:hover{
+	background-color: darkblue;
+	transition: ease 1s;
+}
+
+
+.button a {
+	color: #fefee2;
+	text-decoration: none;
+	margin-right: 10px;
+}
+
+@media screen and (max-width: 1200px) and (orientation:portrait){
+	html, body {
+		flex-direction: column;
+		zoom: 1.5;
+	}
+
+	h1 {
+		margin-bottom: 8%;
+	}
+}
