@@ -59,6 +59,7 @@ h1 {
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
+	margin-bottom: 4%;
 }
 
 .column {
@@ -70,6 +71,41 @@ h1 {
 .column img {
 	vertical-align: middle;
 	width: 100%;
+}
+
+.coffee {
+	display: flex;
+	font-size: 1.5em;
+	justify-content: center;
+}
+
+.coffee a {
+	position: relative;
+	transition: 0.2s;
+	color: black;
+	text-decoration: none;
+}
+
+.coffee a::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: black;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.coffee a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.coffee img {
+	vertical-align: middle;
 }
 
 @keyframes bounce {
