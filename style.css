@@ -6,35 +6,42 @@
 
 html, body {
 	font-family: bangers;
+	height: 100%;
+	width: 100%;
 	margin: 0;
-    height: 100%;
-    width: 100%;
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	background-color: #fefee1;
 }
 
+.titre {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 4%;
+}
+
 h1 {
-	font-size: 6em
+	font-size: 6em;
 }
 
 .button {
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	align-items: center;
+	width: 250px;
+	height: 55px;
 	font-size: 1.5em;
 	background-color: blue;
 	text-decoration: none;
-	width: 200px;
-	height: 50px;
 	border-radius: 20px;
-	margin-left: 8%;
+	margin-bottom: 4%;
 }
 
 .button:hover{
 	background-color: darkblue;
-	transition: ease 1s;
+	transition: ease-in-out 1s;
 }
 
 
@@ -44,6 +51,39 @@ h1 {
 	margin-right: 10px;
 }
 
+.button img {
+	animation: bounce 2s infinite;
+}
+
+.row {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.column {
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 5px;
+}
+
+.column img {
+	vertical-align: middle;
+	width: 100%;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-7px);
+  }
+  60% {
+    transform: translateY(-2.5px);
+  }
+}
+
 @media screen and (max-width: 1200px) and (orientation:portrait){
 	html, body {
 		flex-direction: column;
@@ -51,6 +91,20 @@ h1 {
 	}
 
 	h1 {
-		margin-bottom: 8%;
+		margin-top: 150px;
+	}
+
+	.row {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.column {
+		flex: 75%;
+		max-width: 75%;
+		padding: 0 5px;
+		margin-bottom: 4%;
 	}
 }
