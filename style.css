@@ -34,7 +34,6 @@ h1 {
 	height: 55px;
 	font-size: 1.5em;
 	background-color: white;
-	color: blue;
 	border: solid 2px blue;
 	text-decoration: none;
 	border-radius: 20px;
@@ -44,17 +43,27 @@ h1 {
 .button:hover{
 	background-color: blue;
 	transition: ease-in-out 1s;
-	color: white;
 }
 
-
 .button a {
+	color: blue;
 	text-decoration: none;
 	margin-right: 10px;
 }
 
+.button:hover>a{
+	color: white;
+	transition: ease-in-out 1s;
+}
+
 .button img {
 	animation: bounce 2s infinite;
+	display: none;
+}
+
+.button:hover>img{
+	display: block;
+	transition: ease-in-out 1s;
 }
 
 .row {
