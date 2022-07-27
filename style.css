@@ -13,7 +13,7 @@ html, body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	background-color: #fefee1;
+	background-color: white;
 }
 
 .titre {
@@ -33,14 +33,15 @@ h1 {
 	width: 250px;
 	height: 55px;
 	font-size: 1.5em;
-	background-color: blue;
+	background-color: white;
+	border: solid 2px blue;
 	text-decoration: none;
 	border-radius: 20px;
 	margin-bottom: 4%;
 }
 
 .button:hover{
-	background-color: darkblue;
+	background-color: blue;
 	transition: ease-in-out 1s;
 }
 
@@ -143,4 +144,8 @@ h1 {
 		padding: 0 5px;
 		margin-bottom: 4%;
 	}
+	
+	.coffee {
+		display: flex;
+		flex-direction: column;
 }
