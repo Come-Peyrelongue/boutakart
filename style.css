@@ -44,11 +44,11 @@ h1 {
 .button:hover{
 	background-color: blue;
 	transition: ease-in-out 1s;
+	color: white;
 }
 
 
 .button a {
-	color: blue;
 	text-decoration: none;
 	margin-right: 10px;
 }
