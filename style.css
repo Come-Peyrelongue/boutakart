@@ -53,7 +53,7 @@ h1 {
 
 .button:hover>a{
 	color: white;
-	transition: ease-in-out 1s;
+	transition: ease-in-out 0.5s;
 }
 
 .button img {
@@ -63,7 +63,7 @@ h1 {
 
 .button:hover>img{
 	display: block;
-	transition: ease-in-out 1s;
+	transition: ease-in-out 0.5s;
 }
 
 .row {
@@ -88,6 +88,8 @@ h1 {
 	display: flex;
 	font-size: 1.5em;
 	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 
 .coffee a {
@@ -105,7 +107,6 @@ h1 {
   height: 2px;
   left: 50%;
   position: absolute;
-  background: black;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -138,7 +139,7 @@ h1 {
 	}
 
 	h1 {
-		margin-top: 150px;
+		margin-top: 250px;
 	}
 
 	.row {
@@ -153,5 +154,38 @@ h1 {
 		max-width: 75%;
 		padding: 0 5px;
 		margin-bottom: 4%;
+	}
+
+	.button {
+		background-color: blue;
+	}
+
+	.button:hover{
+		background-color: darkblue;
+		transition: ease-in-out 1s;
+	}
+
+	.button img {
+		animation: bounce 2s infinite;
+		display: flex;
+	}
+
+	.button a {
+		color: white;
+	}
+
+	.coffee {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.coffee img {
+		width: 35px;
+	}
+
+	.coffee p {
+		margin-bottom: 50px;
 	}
 }
