@@ -37,13 +37,13 @@ h1 {
 	border: solid 2px blue;
 	text-decoration: none;
 	border-radius: 20px;
-	margin-bottom: 4%;
 }
 
 .button:hover{
 	background-color: blue;
 	transition: ease-in-out 1s;
 }
+
 
 .button a {
 	color: blue;
@@ -52,6 +52,36 @@ h1 {
 }
 
 .button:hover>a{
+	color: white;
+	transition: ease-in-out 0.5s;
+}
+
+.button-connexion {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 250px;
+	height: 55px;
+	font-size: 1.5em;
+	background-color: white;
+	border: solid 2px blue;
+	text-decoration: none;
+	border-radius: 20px;
+	margin-bottom: 4%;
+}
+
+.button-connexion:hover{
+	background-color: blue;
+	transition: ease-in-out 1s;
+}
+
+.button-connexion a {
+	color: blue;
+	text-decoration: none;
+	margin-right: 10px;
+}
+
+.button-connexion:hover>a{
 	color: white;
 	transition: ease-in-out 0.5s;
 }
