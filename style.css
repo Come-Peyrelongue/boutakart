@@ -37,6 +37,7 @@ h1 {
 	border: solid 2px blue;
 	text-decoration: none;
 	border-radius: 20px;
+	margin-bottom: 4%;
 }
 
 .button:hover{
